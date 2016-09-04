@@ -1,0 +1,24 @@
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	position: relative;
+	white-space: nowrap;
+	text-decoration: none;
+	.user-select(none);
+	&:hover, &:focus, &:active {
+		outline: none;
+		text-decoration: none;
+	}
+	&-github {
+		border-radius: 50%;
+		background-color: #2e7bcf;
+		color: #ffffff;
+		border: 1px solid #ffffff;
+		.transition(all 0.35s);
+		&:hover {
+			background-color: #ffffff;
+			color: #2e7bcf;
+			.box-shadow(0px 0px 5px #fff);
+		}
+	}
+}
